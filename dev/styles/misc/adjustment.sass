@@ -1,0 +1,162 @@
+/* --------- colors --------- */
+
+$link-color			: white
+$text-color			: #413d4b
+$active-color		: #00e0d0
+
+/* --------- adjustment --------- */
+
+$container-width    : 960px
+$body-font          : 'roboto-light'
+
+/* --------- mixins --------- */
+
+.clearfix
+	&:before,
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+/* --------- base --------- */
+
+html
+	width: 100%
+	height: 100%
+
+body
+	font: 14px $body-font
+	line-height: 22px
+	color: $text-color
+	-webkit-font-smoothing: antialiased
+	width: 100%
+	height: 100%
+
+.container
+	width: $container-width
+	margin: 0 auto
+	position: relative
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	min-width: $container-width + 20
+	margin: 0
+
+.main
+	flex: 1
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+ul
+	padding: 0
+	margin: 0
+
+	li
+		padding: 0
+		left: 0
+		list-style: none outside none
+
+
+p
+	padding: 0
+	margin: 0
+	opacity: 0.75
+
+h1, h2, h3, h4, h5, h6
+	padding: 0
+	margin: 0
+
+a
+	cursor: pointer
+	color: $link-color
+	&:hover
+		color: $active-color
+
+.button
+	outline: 0
+	display: inline-block
+	min-width: 120px
+	padding: 0 11px
+	color: $active-color
+	font-size: 16px
+	height: 40px
+	line-height: 40px
+	vertical-align: middle
+	font-family: 'hammersmithone-regular'
+	text-transform: uppercase
+	border: 1px solid $active-color
+	border-radius: 2px
+	background: none
+	transition: 0.3s ease-out
+	&:hover
+		background-color: $active-color
+		border-color: $active-color
+		color: white
+
+section
+	padding: 70px 0
+
+.section__title
+	text-transform: uppercase
+	font-size: 22px
+	color: $text-color
+	font-family: 'playfairdisplay-bold'
+	letter-spacing: 2px
+	text-align: center
+	margin-bottom: 10px
+	position: relative
+	&::after
+		content: ''
+		display: inline-block
+		position: absolute
+		top: 70px
+		left: 50%
+		transform: translateX(-50%)
+		border-bottom: 2px solid rgba($text-color, 0.3)
+		width: 50px
+	&_about::after,
+	&_works::after,
+	&_testimonials::after,
+	&_form::after,
+	&_clients::after
+		display: none
+	&_about
+		margin-bottom: 30px
+		text-align: left
+	&_team
+		color: white
+		&::after
+			border-bottom: 2px solid rgba(white, 0.3)
+	&_works
+		text-align: left
+		display: inline-block
+	&_testimonials
+		color: white
+		font-size: 100px
+		margin-top: 22px
+		margin-bottom: 42px
+	&_form,
+	&_clients
+		text-align: left
+		margin-bottom: 35px
+
+.section__subtitle
+	text-align: center
+	margin-bottom: 70px
+	font-family: 'playfairdisplay-regular'
+	letter-spacing: 1px
+	&_team
+		text-transform: none
+		opacity: 1
+	&_testimonials
+		font-size: 16px
+		line-height: 26px
+		font-family: 'playfairdisplay-regular'
+		text-transform: none
+		margin-bottom: 54px
+
+

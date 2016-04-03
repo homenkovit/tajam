@@ -1,0 +1,71 @@
+.header
+	height: 670px
+	position: relative
+	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%)
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: url('../img/bg/header.jpg') center center no-repeat
+		background-size: cover
+		opacity: 0.15
+	&__logo
+		display: inline-block
+		margin-top: 15px
+		text-decoration: none
+		color: $active-color
+		float: left
+	&__nav
+		margin-top: 35px
+		float: right
+	&__main
+		text-align: center
+	&__top
+		@extend .clearfix
+		margin-bottom: 165px
+.logo__title	
+	font-family: 'roboto-thin'
+	font-size: 30px
+	display: inline-block
+	margin: 0
+	margin-top: 14px
+	margin-left: 14px
+.logo__img
+	float: left
+
+.nav__item
+	display: inline-block
+	margin-left: 27px
+	&:first-child
+		margin-left: 0
+.nav__link
+	display: inline-block
+	font-family: 'roboto-black'
+	font-size: 13px
+	text-decoration: none
+	text-transform: uppercase
+
+.main__title
+	font-family: 'playfairdisplay-black'
+	font-size: 32px
+	color: white
+	text-transform: capitalize
+	position: relative
+	&::after
+		content: ''
+		display: inline-block
+		position: absolute
+		top: 50px
+		left: 50%
+		transform: translateX(-50%)
+		border-bottom: 1px solid $active-color
+		width: 50px
+.main__text
+	padding: 53px 90px 46px
+	color: white
+	opacity: 1
+	font-size: 14px
+	line-height: 24px

@@ -1,0 +1,141 @@
+.footer
+	@extend .clearfix
+	min-height: 400px
+	position: relative
+	color: white
+	line-height: 26px
+	display: flex
+	align-items: center
+	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%)
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: url('../img/bg/footer.jpg') center center no-repeat
+		background-size: cover
+		opacity: 0.15
+	&__logo
+		display: inline-block
+		margin-bottom: 40px
+		text-decoration: none
+		color: $active-color
+		float: left
+	&-left__text
+		@extend .clearfix
+		opacity: 1
+		padding-right: 10px
+	&__main
+		display: flex
+		justify-content: space-between
+		margin-bottom: 70px
+	&-main__item
+		width: 300px
+	&-center__title,
+	&-right__title
+		font-family: 'roboto-black'
+		font-size: 15px
+		text-transform: uppercase
+		margin-top: 16px
+		margin-bottom: 46px
+	&-center__address,
+	&-center__phone
+		margin-bottom: 16px
+		position: relative
+		padding-left: 28px
+		padding-right: 10px
+		&::before
+			content: ''
+			position: absolute
+			top: 2px
+			left: 0
+			display: inline-block
+			width: 14px
+			height: 19px
+			background: url('../img/icons/address.png') 0 0 no-repeat
+	&-center__phone
+		text-decoration: none
+		&:hover
+			text-decoration: none
+		&::before
+			background: url('../img/icons/phone.png') 0 0 no-repeat
+			width: 17px
+			height: 17px
+	&-right__subscribe
+		margin-bottom: 28px
+	&-bottom__copyright
+		float: right
+	&-bottom__nav
+		float: left
+
+.logo__title	
+	font-family: 'roboto-thin'
+	font-size: 30px
+	display: inline-block
+	margin: 0
+	margin-top: 14px
+	margin-left: 14px
+.logo__img
+	float: left
+
+.subscribe__mail
+	width: 210px
+	box-sizing: border-box
+	min-height: 48px
+	margin: 0
+	padding: 10px 0 10px 20px
+	border: 1px solid rgba(#e5e5e5, 0.7)
+	background: none
+.subscribe__btn
+	vertical-align: top
+	width: 70px
+	height: 48px
+	margin-left: 10px
+	border: 0
+	padding: 0
+	background-color: rgba(white, 0.7)
+	transition: 0.3s ease-out
+	&::before
+		content: ''
+		vertical-align: middle
+		width: 25px
+		height: 25px
+		display: inline-block
+		background: url('../img/icons/subscribe.png')
+	&:hover
+		background-color: white
+
+.social__item
+	display: inline-block
+	width: 34px
+	height: 34px
+	border: 1px solid white
+	border-radius: 50%
+	margin-left: 8px
+	transition: 0.3s ease-out
+	&:first-child
+		margin-left: 0
+	&:hover
+		border-color: $active-color
+		background-color: $active-color
+
+.social__link
+	display: inline-block
+	width: 34px
+	height: 34px
+	&_fb
+		background: url('../img/icons/social/facebook.png') center center no-repeat
+	&_tw
+		background: url('../img/icons/social/twitter.png') center center no-repeat
+	&_db
+		background: url('../img/icons/social/dribble.png') center center no-repeat
+	&_ig
+		background: url('../img/icons/social/instagram.png') center center no-repeat
+	&_gp
+		background: url('../img/icons/social/google.png') center center no-repeat
+	&_yt
+		background: url('../img/icons/social/youtube.png') center center no-repeat
+
+

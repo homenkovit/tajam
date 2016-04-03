@@ -1,0 +1,53 @@
+@import "../libs/normalize.sass/normalize"
+@import "../libs/slick-carousel/slick/slick.scss"
+@import "misc/fonts"
+@import "misc/adjustment"
+
+@import "sections/header"
+@import "sections/about"
+@import "sections/expertise"
+@import "sections/team"
+@import "sections/works"
+@import "sections/testimonials"
+@import "sections/contact"
+@import "sections/footer"
+
+.slick-dots
+	margin-top: 126px
+	> li
+		display: inline-block
+		width: 8px
+		height: 8px
+		margin-left: 5px
+		border: 1px solid white
+		border-radius: 50%
+		background: none
+		cursor: pointer
+		&:first-child
+			margin-left: 0
+		&:hover
+			border-color: $active-color
+			background-color: $active-color
+		> button
+			display: none
+	> .slick-active
+		border-color: $active-color
+		background-color: $active-color
+
+.slick-arrow
+	width: 11px
+	height: 21px
+	position: absolute
+	top: 15px
+	border: 0
+	outline: none
+	background: url('../img/icons/back.png') no-repeat
+.slick-prev
+	left: -40px
+.slick-next
+	background: url('../img/icons/forward.png') no-repeat
+	right: -23px
+
+.slick-slide
+	outline: none
+	

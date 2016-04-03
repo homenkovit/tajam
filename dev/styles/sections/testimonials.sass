@@ -1,0 +1,32 @@
+.testimonials
+	position: relative
+	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%)
+	color: white
+	opacity: 1
+	text-transform: uppercase
+	font-family: 'playfairdisplay-regular'
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: url('../img/bg/section-testimonials.jpg') center center no-repeat
+		background-size: cover
+		opacity: 0.15
+	&__name
+		font-family: 'roboto-black'
+	&__position
+		font-family: $body-font
+		font-size: 13px
+		margin-bottom: 56px
+	&__img
+		border-radius: 50%
+		width: 45px
+		height: 45px
+		cursor: pointer
+	&__slider_img
+		width: 310px
+		margin: auto

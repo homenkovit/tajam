@@ -1,0 +1,20 @@
+{
+  "name": "V-project",
+  "description": "blank start template with jade/sass/gulp",
+  "authors": [
+    "Vitalij Khomenko <homenkovit@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dev/libs"
+  ],
+  "dependencies": {
+    "normalize.sass": "^3.0.0",
+    "slick-carousel": "^1.5.9"
+  }
+}

@@ -1,0 +1,199 @@
+extends ../layouts/layout
+
+block title 
+	| tajam
+
+block content
+
+	section.about
+		.container
+			img.about__logo(src='img/icons/about-logo.png')
+			.about__content
+				h3.section__title.section__title_about our story
+				p.about__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quam alias facilis quibusdam, accusantium corporis possimus expedita distinctio animi harum tempora, provident perspiciatis quo debitis cupiditate, incidunt molestias quos nesciunt.
+				p.about__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus debitis possimus, tenetur sed nemo sint expedita nostrum dolores nisi, quaerat ea ratione delectus corporis iste voluptatum beatae inventore illo tempore.
+				button.button.about__button learn more
+	
+	section.video
+		.container.container_video
+			a.video__btn
+			p.video__text watch our story
+
+	section.expertise
+		.container
+			header.section__header.section__header_expertise
+				h3.section__title expertise
+				p.section__subtitle  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, alias.
+			.expertise__items
+				.items__top
+					.top__item
+						img.expertise__img.expertise__img_web(src='img/icons/expertise/web.png')
+						p.expertise__title web design & development
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+					.top__item
+						img.expertise__img.expertise__img_branding(src='img/icons/expertise/branding.png')
+						p.expertise__title branding identity
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+					.top__item
+						img.expertise__img.expertise__img_mobile(src='img/icons/expertise/mobile.png')
+						p.expertise__title mobile app
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+				.items__bottom
+					.bottom__item
+						img.expertise__img.expertise__img_optimization(src='img/icons/expertise/optimization.png')
+						p.expertise__title search engine optimization
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+					.bottom__item
+						img.expertise__img.expertise__img_game(src='img/icons/expertise/game.png')
+						p.expertise__title game development
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+					.bottom__item
+						img.expertise__img.expertise__img_heart(src='img/icons/expertise/heart.png')
+						p.expertise__title made with love
+						p.expertise__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi magnam laborum, rem fuga voluptatem?
+
+	section.team
+		.container
+			header.section__header.section__header_team
+				h3.section__title.section__title_team meet our amazing team
+				p.section__subtitle.section__subtitle_team Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, nobis.
+			.team__items
+				.team__item
+					.team__img
+						img.team__img_founder
+					p.team__name semf ucuk
+					p.team__position ceo & founder
+				.team__item
+					.team__img
+						img.team__img_engineering
+					p.team__name dik adalin
+					p.team__position engineering
+				.team__item
+					.team__img
+						img.team__img_designer
+					p.team__name jeng kol
+					p.team__position designer
+				.team__item
+					.team__img
+						img.team__img_marketing
+					p.team__name pet romak
+					p.team__position marketing
+			footer.section__footer.section__footer_team
+				p.team__title_footer Become part of our dream team, let’s join us !
+				button.button.button_team we are hiring
+
+	section.works
+		.container
+			h3.section__title.section__title_works our works
+			a.works__all(href='javascript:void(0)') See All Project in dribble
+		.works__items
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+			a.works__item(href='javascript:void(0)')
+		button.button.button_works load more
+
+	section.testimonials
+		.container
+			.testimonials__slider
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name semf ucuk
+					p.testimonials__position ceo & founder
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name dik adalin
+					p.testimonials__position engineering
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name jane galadriel
+					p.testimonials__position ceo tengkurep
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name jeng kol
+					p.testimonials__position designer
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name pet romak
+					p.testimonials__position marketing
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name jane galadriel
+					p.testimonials__position ceo tengkurep
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name jane galadriel
+					p.testimonials__position ceo tengkurep
+				.testimonials-slider__item
+					h3.section__title.section__title_testimonials “
+					p.section__subtitle.section__subtitle_testimonials Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo soluta quisquam quae, veritatis ipsa. Quibusdam autem officia, nisi odit ex porro, sint laborum aut, illum eius consequuntur non eligendi similique consectetur neque temporibus id error deserunt delectus. Illo aspernatur deserunt voluptatem, ratione delectus amet iste quaerat adipisci numquam perferendis, totam officia dolorum, veritatis modi debitis nihil commodi. Repellat, iste ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					p.testimonials__name jane galadriel
+					p.testimonials__position ceo tengkurep
+			.testimonials__slider_img
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/1.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/2.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/3.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/4.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/5.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/1.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/2.jpg")
+				.testimonials__img-container
+					img.testimonials__img(src="img/slider/3.jpg")
+
+
+
+	section.contact
+		.container
+			.contact__form
+				h3.section__title.section__title_form give us a good news
+				form
+					input.contact__input(type="text", placeholder="Name")
+					input.contact__input(type="mail", placeholder="Email", required)
+					input.contact__input(type="text", placeholder="Subject")
+					textarea.contact__textarea(name="textarea", placeholder="Your Message")
+					input.button(type="submit", value="SUBMIT") 
+			.contact__clients
+				h3.section__title.section__title_clients our happy client
+				.clients__items
+					.clients-img__container
+						img.clients__img.clients__img_zara(src="img/icons/clients/zara.png")
+					.clients-img__container
+						img.clients__img.clients__img_mango(src="img/icons/clients/mango.png")
+					.clients-img__container
+						img.clients__img.clients__img_barneys(src="img/icons/clients/barneys.png")
+					.clients-img__container
+						img.clients__img.clients__img_gucci(src="img/icons/clients/gucci.png")
+					.clients-img__container
+						img.clients__img.clients__img_ck(src="img/icons/clients/ck.png")
+					.clients-img__container
+						img.clients__img.clients__img_nike(src="img/icons/clients/nike.png")
+					.clients-img__container
+						img.clients__img.clients__img_converse(src="img/icons/clients/converse.png")
+					.clients-img__container
+						img.clients__img.clients__img_puma(src="img/icons/clients/puma.png")
+					.clients-img__container
+						img.clients__img.clients__img_levis(src="img/icons/clients/levi's.png")
+					.clients-img__container
+						img.clients__img.clients__img_billabong(src="img/icons/clients/billabong.png")

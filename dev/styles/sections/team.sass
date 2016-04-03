@@ -1,0 +1,41 @@
+.team
+	height: 614px
+	position: relative
+	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%)
+	color: white
+	opacity: 1
+	text-transform: uppercase
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: url('../img/bg/section-team.jpg') center center no-repeat
+		background-size: cover
+		opacity: 0.15
+	&__img
+		width: 220px
+		height: 230px
+		background: white
+	&__items
+		display: flex
+		justify-content: space-between
+		text-align: center
+		margin-bottom: 70px
+	&__name
+		font-family: 'roboto-black'
+		margin-top: 20px
+	&__position
+		font-size: 13px
+		margin-bottom: 26px
+		opacity: 0.7
+	&__item
+		border: 1px solid rgba(white, 0.7)
+	&__title_footer
+		opacity: 1
+		text-transform: none
+		margin-bottom: 26px
+
